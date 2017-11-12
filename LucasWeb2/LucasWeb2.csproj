@@ -20,7 +20,7 @@
   </ItemGroup>
 
   <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
-    <Exec Command="copy ..\..\client\dist\*.* &quot;$(ProjectDir)wwwroot&quot;" />
+    <Exec Command="md &quot;$(ProjectDir)wwwroot&quot;&#xD;&#xA;copy ..\..\client\dist\*.* &quot;$(ProjectDir)wwwroot&quot;" />
   </Target>
 
 </Project>
