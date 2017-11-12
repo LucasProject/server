@@ -20,7 +20,7 @@
   </ItemGroup>
 
   <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
-    <Exec Command="copy c:\git\ng-test\dist\*.* &quot;$(ProjectDir)wwwroot&quot;" />
+    <Exec Command="copy ..\..\client\dist\*.* &quot;$(ProjectDir)wwwroot&quot;" />
   </Target>
 
 </Project>
